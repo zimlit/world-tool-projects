@@ -11,6 +11,15 @@ void main() {
       assert(project.desc == "cats");
     });
 
+    test("deserialize galaxies", () {
+      var xml =
+          '<project name="name"><description>this is a description\nthis is a lin</description><galaxies><galaxy name=""><description></description></galaxy><galaxy name=""><description></description></galaxy></galaxies></project>';
+      var project = Project.fromXml(xml);
+      assert(project.name == "name");
+      assert(project.desc == "this is a description\nthis is a lin");
+      assert(project.galaxies.length == 2);
+    });
+
     test("serialize no galaxies", () {
       var project = Project("string", "cats");
       var expected =

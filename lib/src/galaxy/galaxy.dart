@@ -27,12 +27,15 @@ class Galaxy {
     if (desc == null) {
       descStr = "";
     } else {
-      if (desc.children[0].nodeType != XmlNodeType.TEXT) {
-        throw "incorrect galaxy format";
+      if (desc.children.isNotEmpty) {
+        if (desc.children[0].nodeType != XmlNodeType.TEXT) {
+          throw "incorrect galaxy format";
+        }
+        if (desc.children.length != 1) {
+          throw "incorrect galaxy format";
+        }
       }
-      if (desc.children.length != 1) {
-        throw "incorrect galaxy format";
-      }
+
       descStr = desc.innerText;
     }
 
