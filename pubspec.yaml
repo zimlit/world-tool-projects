@@ -1,6 +1,6 @@
 name: world_tool_projects
 description: A package for working with World Tool Project files
-version: 1.1.0
+version: 1.1.1
 repository: "https://github.com/zimlit/world-tool-projects"
 
 environment:
