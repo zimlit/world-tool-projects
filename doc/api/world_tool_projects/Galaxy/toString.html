@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the toString method from the Project class, for the Dart programming language.">
-  <title>toString method - Project class - world_tool_projects library - Dart API</title>
+  <meta name="description" content="API docs for the toString method from the Galaxy class, for the Dart programming language.">
+  <title>toString method - Galaxy class - world_tool_projects library - Dart API</title>
 
 
   
@@ -31,7 +31,7 @@
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../../index.html">world_tool_projects</a></li>
     <li><a href="../../world_tool_projects/world_tool_projects-library.html">world_tool_projects</a></li>
-    <li><a href="../../world_tool_projects/Project-class.html">Project</a></li>
+    <li><a href="../../world_tool_projects/Galaxy-class.html">Galaxy</a></li>
     <li class="self-crumb">toString method</li>
   </ol>
   <div class="self-name">toString</div>
@@ -83,16 +83,11 @@ mainly for debugging or logging.</p>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 String toString() {
-  var builder = XmlBuilder();
-  builder.element(&quot;project&quot;, nest: () {
+  final builder = XmlBuilder();
+  builder.element(&quot;galaxy&quot;, nest: () {
     builder.attribute(&quot;name&quot;, name);
     builder.element(&quot;description&quot;, nest: () {
       builder.text(desc);
-    });
-    builder.element(&quot;galaxies&quot;, nest: () {
-      for (var element in galaxies) {
-        builder.xml(element.toString());
-      }
     });
   });
   return builder.buildDocument().toString();
@@ -112,33 +107,32 @@ String toString() {
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
   <li><a href="../../index.html">world_tool_projects</a></li>
   <li><a href="../../world_tool_projects/world_tool_projects-library.html">world_tool_projects</a></li>
-  <li><a href="../../world_tool_projects/Project-class.html">Project</a></li>
+  <li><a href="../../world_tool_projects/Galaxy-class.html">Galaxy</a></li>
   <li class="self-crumb">toString method</li>
 </ol>
 
 
-    <h5>Project class</h5>
+    <h5>Galaxy class</h5>
     <ol>
 
-        <li class="section-title"><a href="../../world_tool_projects/Project-class.html#constructors">Constructors</a></li>
-          <li><a href="../../world_tool_projects/Project/Project.html">Project</a></li>
-          <li><a href="../../world_tool_projects/Project/Project.fromXml.html">fromXml</a></li>
+        <li class="section-title"><a href="../../world_tool_projects/Galaxy-class.html#constructors">Constructors</a></li>
+          <li><a href="../../world_tool_projects/Galaxy/Galaxy.html">Galaxy</a></li>
+          <li><a href="../../world_tool_projects/Galaxy/Galaxy.fromXml.html">fromXml</a></li>
 
 
     <li class="section-title">
-      <a href="../../world_tool_projects/Project-class.html#instance-properties">Properties</a>
+      <a href="../../world_tool_projects/Galaxy-class.html#instance-properties">Properties</a>
     </li>
-    <li><a href="../../world_tool_projects/Project/desc.html">desc</a></li>
-    <li><a href="../../world_tool_projects/Project/galaxies.html">galaxies</a></li>
+    <li><a href="../../world_tool_projects/Galaxy/desc.html">desc</a></li>
     <li class="inherited"><a href="https://api.dart.dev/stable/2.17.3/dart-core/Object/hashCode.html">hashCode</a></li>
-    <li><a href="../../world_tool_projects/Project/name.html">name</a></li>
+    <li><a href="../../world_tool_projects/Galaxy/name.html">name</a></li>
     <li class="inherited"><a href="https://api.dart.dev/stable/2.17.3/dart-core/Object/runtimeType.html">runtimeType</a></li>
 
-    <li class="section-title"><a href="../../world_tool_projects/Project-class.html#instance-methods">Methods</a></li>
+    <li class="section-title"><a href="../../world_tool_projects/Galaxy-class.html#instance-methods">Methods</a></li>
     <li class="inherited"><a href="https://api.dart.dev/stable/2.17.3/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-    <li><a href="../../world_tool_projects/Project/toString.html">toString</a></li>
+    <li><a href="../../world_tool_projects/Galaxy/toString.html">toString</a></li>
 
-    <li class="section-title inherited"><a href="../../world_tool_projects/Project-class.html#operators">Operators</a></li>
+    <li class="section-title inherited"><a href="../../world_tool_projects/Galaxy-class.html#operators">Operators</a></li>
     <li class="inherited"><a href="https://api.dart.dev/stable/2.17.3/dart-core/Object/operator_equals.html">operator ==</a></li>
 
 
