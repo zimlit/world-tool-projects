@@ -9,6 +9,7 @@ class Project {
   /// The description of the project.
   late String desc;
 
+  /// This list contains all the galaxies of the project.
   late List<Galaxy> galaxies;
 
   Project(this.name, this.desc) : galaxies = [];
@@ -29,7 +30,7 @@ class Project {
 
     String descStr = "";
     if (desc != null) {
-      if (desc.children.length != 0) {
+      if (desc.children.isNotEmpty) {
         if (desc.children.length > 1) {
           throw "incorrect project format";
         }

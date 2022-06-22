@@ -6,3 +6,7 @@
 
 - Adds Galaxy.
 - Fixes empty descriptions.
+
+## 1.1.1
+
+- Add more docs to Project.
