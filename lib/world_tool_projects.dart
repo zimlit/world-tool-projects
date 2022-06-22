@@ -2,5 +2,4 @@
 library world_tool_projects;
 
 export 'src/world_tool_projects_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/galaxy/galaxy.dart';
