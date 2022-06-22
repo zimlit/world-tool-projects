@@ -10,3 +10,8 @@
 ## 1.1.1
 
 - Add more docs to Project.
+
+## 1.1.2
+
+- Fixes empty galaxy descriptions.
+- Adds more tests.
